@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+        body {
+            background-color: blue;
+        }
+        #container {
+            width: 500px;
+            margin: 0 auto;
+          }
+          
+          #chat-window {
+            height: 400px;
+            overflow: auto;
+          }
+          
+          #output {
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-bottom: 1px solid #ccc;
+          }
+          
+          #feedback {
+            font-size: 0.8em;
+            color: #999;
+          }
+          
+          #message-form {
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-top: 1px solid rgb(240, 10, 10);
+          }
+          
+          #message-form input {
+            padding: 10px;
+            width: calc(100% - 80px);
+            margin-right: 10px;
+            border: 1px solid #ccc;
+          }
+          
+          #message-form button {
+            padding: 10px;
+            width: 70px;
+          }
+          
+    </style>
+    <title>Socket.io Chat App</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="chat-window">
+        <div id="output"></div>
+      </div>
+      <div id="feedback"></div>
+      <form id="message-form">
+        <input type="text" id="message" placeholder="Enter message...">
+        <input type="file" id="image" accept="image/*">
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </body>
+  <script src="client.js"></script>
+</html>
